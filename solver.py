@@ -1,6 +1,5 @@
 from PIL import Image, ImageDraw, ImageFont
 
-
 def strcoords(string, substr):
     ret = string.find(substr)
     if ret == -1:
@@ -58,7 +57,7 @@ def r_bdiagonal(l):
 
 
 def frows(l): # here for consistency 
-    return l
+    return [i for i in l]
 
 
 def fcols(l):
@@ -126,11 +125,11 @@ def solve(l, searchterms):
                 
         # horizontal reversed
         for ypos, row in enumerate(rows):
-            coords = strcoords(''.join(reversed(row)), searchterm)
+            coords = strcoords(''.join(row[::-1]), searchterm)
             cwordi = []
             if coords != []:
                 for xpos in coords:
-                    cwordi.append((xpos, len(row) - 1 - ypos))
+                    cwordi.append((len(row[::-1]) - xpos - 1, ypos))
                 found_indexes.append(cwordi)
                 word_found = True
 

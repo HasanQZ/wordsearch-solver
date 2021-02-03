@@ -29,5 +29,55 @@ board = [
     "xldvuyehybbbwjsqegmwvahaton",
     "smrofpjadtqflkkuymertnnfmxq"]
 
-solve_to_image(board, ['wvw'])
+b2 = ['ueirvyeozxbqjwosokdkuxprqtd',
+      'ewdetsawlapicinumblzjfiuvyw',
+      'tailjiecdncwmcbtbjtndyhgiva',
+      'ssnnatxgjlbwqiyzbyarpsgubre',
+      'atgesuogajbknundlchuqibenwx',
+      'wezjrtxpgbcixotoxiuqpmnhkhc',
+      'laepihuygjrinmsyoiuffiplofm',
+      'antlnbtvmlkansxiimdtloabbnn',
+      'rbscdstawoplgynsbdkoabgcajb',
+      'unakukmgjblgezpwfvslmfgpqfm',
+      'tuwgsdtwmeahpuoleatlmsbazjc',
+      'lolstgldbcfeyglzghsbagvssav',
+      'uuacrhppbtttfllfoyrnbxsekqy',
+      'crcwizozjhgjkjuitfrdlhpmpxf',
+      'ibitacejkunhgmtrofqgemqgkns',
+      'rxdxlxoytfsbgiieskcowpefnlf',
+      'gkeiwckifasogcowvompkjmdzeo',
+      'aumnatwmrrsguinosntzrxcratw',
+      'vugesaktwdyrmwfrkpkfuobfops',
+      'khqattbkfdwvyhzkdoabjodlxyo',
+      'kxnreactivejkuisalrdowtubwl',
+      'gbjqeqgdemmvskrcrbkaicgtcok',
+      'mmpjlceonpvuxdiybhipniizutv',
+      'kqoxlwtxwtadudevisorrochgkg',
+      'rjzukpdsihhazardouswastemaj',
+      'otgmnyrnghomyydyqqjtzwsnewh',
+      'skobuxyuljkwviwjrlyqbhesfwc']
+
+terms = ['pollution',
+        'product',
+        'adem',
+        'acid',
+        'toxic',
+        'garbage',
+        'flammable',
+        'trash',
+        'gasoline',
+        'reactive',
+        'epa',
+        'corrosive',
+        'municipalwaste',
+        'fireworks',
+        'waste',
+        'bugspray',
+        'medicalwaste',
+        'hazardouswaste',
+        'agriculturalwaste',
+        'industrialwaste']
+
+x = ['product','adem','acid','garbage','trash','epa']
+solve_to_image(b2, terms)
 
