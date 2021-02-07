@@ -174,7 +174,7 @@ def solve(l, searchterms):
     return words_and_locations
 
 
-def solve_to_image(board, words, filename='output.jpg', font='times-new-roman.ttf'):
+def solve_to_image(board, words, filename='output.jpg', font='./WeretigerRegular.ttf'):
     termdict = solve(board, words)
     
     bcrds = crds(board)
@@ -190,7 +190,12 @@ def solve_to_image(board, words, filename='output.jpg', font='times-new-roman.tt
     imheight = len(board) * 30
 
     img = Image.new(mode='RGB', size=(imwidth, imheight), color=(255, 255, 255))
-    myfont = ImageFont.truetype(font, 30)
+    try:
+        myfont = ImageFont.truetype(font, 30)
+    except OSError:
+        myfont = ImageFont.load_default()
+        print(f'WARNING: could not load font {font}, reverting to default font (characters may be very small!)')
+
     d1 = ImageDraw.Draw(img)
 
     fontx = 0
